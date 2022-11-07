@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(0deg, #000000 0%, #2C2C2C 68.51%);
+}
+
+.product-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: center;
+}
+
+.product-cards__items {
+    display: flex;
+    flex-direction: column;
+    border-radius: 27px;
+    align-items: center;
+
+    width: 273px;
+
+    background: conic-gradient(from 238.98deg at 40.33% 53.77%, #B7E7A4 0deg, rgba(183, 231, 164, 0) 360deg);
+}
+
+.product-cards__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 26px;
+
+}
+
+.product-cards__content_bg_White {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 20px 22px;
+    gap: 15px;
+
+    background: #FFFFFF;
+    border-radius: 27px;
+}
+
+.product-cards__title {
+    font-size: 24px;
+}
+
+.product-cards__parametrs {
+    list-style-type: none;
+    color: #989898;
+}
+
+.product-cards__parametrs li {
+    padding: 5px 0;
+}
+
+.product-cards__color-indicator_green {
+    display: inline-block;
+    width: 30px;
+    height: 16px;
+    background: #7CB266;
+    border-radius: 8px;
+    color: none;
+}
+
+.product-cards__price {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.product-cards__order {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+
+    background: #000000;
+    border-radius: 25px;
+
+    font-size: 24px;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.product-cards__order:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 22px;
+}
