@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>making an order</title>
     <!-- style -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/normalaize.css">
+
 </head>
 
 <body>
     <!-- board -->
-    <div class="main">
+    <!-- <div class="main">
         <div class="product-cards">
             <div class="product-cards__items">
                 <div class="product-cards__content">
@@ -87,35 +89,45 @@
             </div>
         </div>
 
-        <!-- popup -->
-        <div class="popup">
-            <div class="popup__window">
-                <h1 class="popup__title">Order form</h1>
-                <div class="popup__items">
-                    <div class="popup__content">
-                        <img class="popup__img" src="" alt="photo">
-                    </div>
-                    <div class="popup__content_bg_white">
-                        <h3 class="popup__card-title"></h3>
-                        <span class="popup__card-info"></span>
-                        <ul class="popup__card-parametrs">
-                            <li></li>
-                            <li></li>
-                        </ul>
-                        <span class="popup__card-price"><small>$</small></span>
-                    </div>
+    </div> -->
+
+    <!-- popup -->
+    <div class="popup">
+        <div class="popup__window">
+            <h1 class="popup__title">Order form</h1>
+            <!-- card -->
+            <div class="popup__items">
+                <div class="popup__content">
+                    <img class="popup__img" src="" alt="photo">
                 </div>
-                <div class="popup__input-data">
-                    <input type="text" name="user_name" id="user_name">
-                    <input type="tel" name="phone" id="phone">
-                </div>
-                <div class="popup__button">
-                    <a href="#" class="popup__button-cancel">cancel</a>
-                    <a href="#" class="popup__button-send">send</a>
+                <div class="popup__content_bg_white">
+                    <h3 class="popup__card-title">Наименование</h3>
+                    <span class="popup__card-info">Небольшоая информация о продукте</span>
+                    <ul class="popup__card-parametrs">
+                        <li>size: 55x55x55</li>
+                        <li>color:</li>
+                    </ul>
+                    <span class="popup__card-price">price: 240<small>$</small></span>
                 </div>
             </div>
+            <!-- input -->
+            <div class="popup__input-data">
+                <!-- popup__input-data-iner -->
+                <div>
+                    <span>Your name</span>
+                    <input type="text" name="user_name" id="user_name" placeholder="Enter Name" required autofocus>
+                </div>
+                <div>
+                    <span>phone number</span>
+                    <input type="tel" name="phone" id="phone" placeholder="+7 (___)___ __-__">
+                </div>
+            </div>
+            <!-- button -->
+            <div class="popup__button">
+                <button href="#" class="popup__button-cancel" type="reset">cancel</button>
+                <button href="#" class="popup__button-send" type="submit">order</button>
+            </div>
         </div>
-
     </div>
 
     <!-- script -->
