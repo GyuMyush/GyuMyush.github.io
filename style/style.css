@@ -112,16 +112,20 @@ body {
 
 /* popup */
 .popup {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
 
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
+}
+
+.openedd {
+    display: flex;
 }
 
 .popup__window {
@@ -141,10 +145,89 @@ body {
     font-weight: bolder;
 }
 
+.popup__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background: conic-gradient(from 90deg at 57.79% 49.85%, #B7E7A4 0deg, rgba(183, 231, 164, 0) 360deg);
+    border-radius: 27px;
+}
+
+.popup__content {
+    display: flex;
+    align-items: center;
+}
+
+.popup__content_bg_white {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 27px;
+    gap: 8px;
+}
+
+.popup_card-param-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup__img {
+    padding: 1rem;
+    width: 50%;
+}
+
+.popup__card-parametrs {
+    list-style-type: none;
+    color: #989898;
+}
+
+.popup__card-info {
+    max-width: 280px;
+    max-height: 40px;
+    overflow: hidden;
+    white-space: pre-wrap;
+    text-overflow: ellipsis;
+}
+
+.popup__input-data {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
 .popup__input-data div {
+    gap: 7px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.popup__input-data span {
+    font-weight: bold;
+}
+
+.popup__button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.popup__input-data input {
+    text-align: center;
+    padding: 3px 16px;
+    border: 1px solid #FFFFFF;
+    background: #FFFFFF;
+    border-radius: 19.5px;
 }
 
 .popup__button button {

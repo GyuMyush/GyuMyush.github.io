@@ -22,8 +22,7 @@
                 </div>
                 <div class="product-cards__content_bg_White">
                     <h3 class="product-cards__title">Chai with legs 1</h3>
-                    <span class="product-cards__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Excepturi
-                        ea dolore doloremque laborum et ut adipisci quis, iusto sint</span>
+                    <span class="product-cards__info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi ea dolore doloremque laborum et ut adipisci quis, iusto sint</span>
                     <ul class="product-cards__parametrs">
                         <li>size: 55 x 57 x 80</li>
                         <li>color: <div class="product-cards__color-indicator_green" alt="green">
@@ -31,7 +30,7 @@
                         </li>
                     </ul>
                     <span class="product-cards__price">price: 240 <small>$</small></span>
-                    <a class="product-cards__order" href="#">order</a>
+                    <a class="product-cards__order" href="#" onclick="order(1)">order</a>
                 </div>
             </div>
             <div class="product-cards__items">
@@ -49,7 +48,7 @@
                         </li>
                     </ul>
                     <span class="product-cards__price">price: 180 <small>$</small></span>
-                    <a class="product-cards__order" href="#">order</a>
+                    <a class="product-cards__order" href="#" onclick="order(2)">order</a>
                 </div>
             </div>
             <div class="product-cards__items">
@@ -67,7 +66,7 @@
                         </li>
                     </ul>
                     <span class="product-cards__price">price: 470 <small>$</small></span>
-                    <a class="product-cards__order" href="#">order</a>
+                    <a class="product-cards__order" href="#" onclick="order(3)">order</a>
                 </div>
             </div>
             <div class="product-cards__items">
@@ -84,7 +83,7 @@
                         </li>
                     </ul>
                     <span class="product-cards__price">price: 154 <small>$</small></span>
-                    <a class="product-cards__order" href="#">order</a>
+                    <a class="product-cards__order" href="#" onclick="order(4)">order</a>
                 </div>
             </div>
         </div>
@@ -92,22 +91,25 @@
     </div>
 
     <!-- popup -->
-    <div class="popup">
+    <div class="popup" id="popup">
         <div class="popup__window">
             <h1 class="popup__title">Order form</h1>
             <!-- card -->
             <div class="popup__items">
                 <div class="popup__content">
-                    <img class="popup__img" src="" alt="photo">
+                    <img class="popup__img" src="img/pic-armchair.png" alt="photo">
                 </div>
                 <div class="popup__content_bg_white">
                     <h3 class="popup__card-title">Наименование</h3>
-                    <span class="popup__card-info">Небольшоая информация о продукте</span>
-                    <ul class="popup__card-parametrs">
-                        <li>size: 55x55x55</li>
-                        <li>color:</li>
-                    </ul>
-                    <span class="popup__card-price">price: 240<small>$</small></span>
+                    <span class="popup__card-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Excepturi ea
+                        dolore doloremque laborum et ut adipisci quis iusto sint</span>
+                    <div class="popup_card-param-price">
+                        <ul class="popup__card-parametrs">
+                            <li>size: 55x55x55</li>
+                            <li>color:</li>
+                        </ul>
+                        <span class="popup__card-price">price: 240<small>$</small></span>
+                    </div>
                 </div>
             </div>
             <!-- input -->
@@ -118,14 +120,14 @@
                     <input type="text" name="user_name" id="user_name" placeholder="Enter Name" required autofocus>
                 </div>
                 <div>
-                    <span>phone number</span>
+                    <span>Phone number</span>
                     <input type="tel" name="phone" id="phone" placeholder="+7 (___)___ __-__">
                 </div>
             </div>
             <!-- button -->
             <div class="popup__button">
-                <button href="#" class="popup__button-cancel" type="reset">cancel</button>
-                <button href="#" class="popup__button-send" type="submit">order</button>
+                <button href="#" id="popup__button-cancel" type="reset">cancel</button>
+                <button href="#" id="popup__button-send" type="submit">send</button>
             </div>
         </div>
     </div>
